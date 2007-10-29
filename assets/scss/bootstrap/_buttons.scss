@@ -45,8 +45,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 
   &:hover {
     color: $white;
-    background-color: #045cd6;
-    border-color: #045cd6;
+    background-color: lighten($color: $primary, $amount: 10);
+    border-color: $primary;
   }
 
   &:focus, &.focus {

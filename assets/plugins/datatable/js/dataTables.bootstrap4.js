@@ -46,9 +46,9 @@ var DataTable = $.fn.dataTable;
 /* Set the defaults for DataTables initialisation */
 $.extend( true, DataTable.defaults, {
 	dom:
-		"<'row'<'col-sm-12 col-md-6'f><'col-sm-12 col-md-6'i>>" +
+		"<'row'<'col-sm-12 col-md-6'<'float-left'f>><'col-sm-12 col-md-6'<'float-right mt-0'i>>>" +
 		"<'row'<'col-sm-12'tr>>" +
-		"<'row'<'col-sm-12 col-md-7'p><'col-sm-12 col-md-5'l>>",
+		"<'row'<'col-sm-12 col-md-7'<'float-left'p>><'col-sm-12 col-md-5'<'float-right mb-0 mt-3'l>>>",
 	renderer: 'bootstrap'
 } );
 
@@ -56,8 +56,8 @@ $.extend( true, DataTable.defaults, {
 /* Default class modification */
 $.extend( DataTable.ext.classes, {
 	sWrapper:      "dataTables_wrapper dt-bootstrap4",
-	sLengthSelect: "custom-select custom-select-sm form-control form-control-sm",
-	sFilterInput:  "form-control form-control-sm",
+	sLengthSelect: "bg-primary tx-white",
+	sFilterInput:  "form-control form-control-sm filter-search bg-black-05",
 	sProcessing:   "dataTables_processing card",
 	sPageButton:   "paginate_button page-item btn"
 } );

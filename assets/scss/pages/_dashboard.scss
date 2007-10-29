@@ -55,6 +55,7 @@ body {
 
 
 td > [class^="fa"] {
+    
     &:hover {
         cursor: pointer;
     }
@@ -70,4 +71,9 @@ a:hover {
         float: left;
         margin-top: 0;
     }
+}
+
+.filter-search{
+    border-radius: 2rem;
+    padding: .3rem;
 }

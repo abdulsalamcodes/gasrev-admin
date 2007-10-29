@@ -87,7 +87,7 @@ License        :   Licensed under ThemeForest License
 /*white variables*/
 /*black variables*/
 /*shadow variables*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600 &display=swap");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -3305,8 +3305,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #045cd6;
-  border-color: #045cd6;
+  background-color: #b60d00;
+  border-color: #830900;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -63398,7 +63398,7 @@ button.bg-dark:hover, button.bg-dark:focus {
 }
 
 /* ###### 9.8 Typography   ###### */
-.tx-black {
+.tx-super-bold {
   font-weight: 900;
 }
 
@@ -72749,7 +72749,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Cerebri sans";
-  font-family: "Open sans",sans-serif;
+  font-family: "Open sans", sans-serif;
   background-color: rgba(131, 9, 0, 0.05);
 }
 
@@ -72761,8 +72761,9 @@ body {
   padding: 0;
 }
 
-.table th, .table td {
-  padding: .5rem;
+.table th,
+.table td {
+  padding: 0.5rem;
   vertical-align: middle;
 }
 
@@ -72792,8 +72793,8 @@ body {
 .card.shadow-custom {
   -webkit-box-shadow: 0px 0px 85px 0 rgba(0, 0, 0, 0.05) !important;
           box-shadow: 0px 0px 85px 0 rgba(0, 0, 0, 0.05) !important;
-  -webkit-box-shadow: 0 0px 85px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0px 85px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 85px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 85px rgba(0, 0, 0, 0.05);
 }
 
 td > [class^="fa"]:hover {
@@ -72802,4 +72803,16 @@ td > [class^="fa"]:hover {
 
 a:hover {
   color: #830900;
+}
+
+@media (min-width: 576px) {
+  .dataTables_wrapper .dataTables_filter {
+    float: left;
+    margin-top: 0;
+  }
+}
+
+.filter-search {
+  border-radius: 2rem;
+  padding: .3rem;
 }
