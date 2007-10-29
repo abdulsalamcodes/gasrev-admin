@@ -111,7 +111,7 @@ object, embed, video {
         border-radius: 0px;
         text-decoration: none;
         position: relative;
-        color: #5b6e88;
+        color: #a3a3a3;
         padding: 15px 12px 15px 12px;
         font-weight: 400;
       }
@@ -766,6 +766,7 @@ object, embed, video {
     &:hover .sub-icon {
       color:$primary;
       background: transparent;
+      color: #830900;
     }
   }
 

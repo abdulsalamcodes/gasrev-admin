@@ -1,0 +1,38 @@
+@import url(//db.onlinewebfonts.com/c/ad775834db281065fc17e86ad857bf63?family=Cerebri+Sans);
+
+body {
+    // background-color: red;
+    font-family: "Cerebri sans";
+    background-color: rgba(131, 9, 0, 0.05);
+}
+
+.navbar-form .form-control {
+    background-color: rgba(131, 9, 0, 0.05);
+}
+
+
+.custom-table {
+    .card-dashboard-eight {
+        padding: 0;
+    }
+}
+
+
+.btn {
+    // padding: 10px .2rem;
+    border-radius: 30px;
+    width: 150px;
+    color: white;
+
+    &:hover {cursor: pointer;color: currentColor;}
+
+    &__blue {
+        background-color: #009cee;
+
+        &:hover {color: currentColor;}
+    }
+
+    &__success {
+        background-color: #0d8e0b;
+    }
+}
