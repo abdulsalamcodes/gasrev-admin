@@ -87,7 +87,7 @@ License        :   Licensed under ThemeForest License
 /*white variables*/
 /*black variables*/
 /*shadow variables*/
-@import url(//db.onlinewebfonts.com/c/ad775834db281065fc17e86ad857bf63?family=Cerebri+Sans);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -35334,11 +35334,11 @@ input.parsley-error:focus, textarea.parsley-error:focus, input.parsley-success:f
 }
 
 a.bg-primary:hover, a.bg-primary:focus {
-  background-color: #0040ff !important;
+  background-color: #b60d00 !important;
 }
 
 button.bg-primary:hover, button.bg-primary:focus {
-  background-color: #0040ff !important;
+  background-color: #b60d00 !important;
 }
 
 .bg-secondary {
@@ -36227,6 +36227,10 @@ button.bg-dark:hover, button.bg-dark:focus {
 }
 
 .h-75 {
+  height: 75% !important;
+}
+
+.h-85 {
   height: 75% !important;
 }
 
@@ -72722,6 +72726,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Cerebri sans";
+  font-family: "Open sans",sans-serif;
   background-color: rgba(131, 9, 0, 0.05);
 }
 
@@ -72733,9 +72738,14 @@ body {
   padding: 0;
 }
 
+.table th, .table td {
+  padding: .5rem;
+  vertical-align: middle;
+}
+
 .btn {
   border-radius: 30px;
-  width: 150px;
+  width: 115px;
   color: white;
 }
 

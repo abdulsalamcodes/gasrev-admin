@@ -4,13 +4,13 @@
 
 a.bg-primary {
   &:hover, &:focus {
-    background-color: #0040ff !important;
+    background-color: lighten($color: $primary, $amount: 10) !important;
   }
 }
 
 button.bg-primary {
   &:hover, &:focus {
-    background-color: #0040ff !important;
+    background-color: lighten($color: $primary, $amount: 10) !important;
   }
 }
 
