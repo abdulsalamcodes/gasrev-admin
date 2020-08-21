@@ -41,3 +41,19 @@ body {
         background-color: #0d8e0b;
     }
 }
+
+.card.shadow-custom {
+    box-shadow: $custom-shadow !important;
+    box-shadow: 0 0px 85px rgba(0, 0, 0, 0.05);
+  }
+
+
+  td > [class^="fa"] {
+      &:hover {
+          cursor: pointer;
+      }
+  }
+
+  a:hover {
+      color: $primary;
+  }

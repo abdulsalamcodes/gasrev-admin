@@ -933,12 +933,12 @@ body.dark-theme {
 }
 
 .dark-theme #basic-alert .alert .close, .dark-theme #dismiss-alerts .alert .close {
-  color: #000;
+  color: #222;
   opacity: .3;
 }
 
 .dark-theme #icon-dismissalerts .alert .close {
-  color: #000;
+  color: #222;
   opacity: .3;
 }
 
@@ -2342,7 +2342,7 @@ body.dark-theme {
 }
 
 .dark-theme .bg-info p.card-text {
-  color: #000;
+  color: #222;
 }
 
 .dark-theme .main-content-body.main-content-body-contacts .media-body h5 {
@@ -2464,7 +2464,7 @@ body.dark-theme {
     color: #fff;
   }
   .dark-theme .main-calendar .fc-header-toolbar .fc-left button.fc-today-button {
-    color: #000;
+    color: #222;
   }
 }
 
@@ -2522,11 +2522,11 @@ body.dark-theme {
 }
 
 .dark-theme .gray-set .bg-gray-100 {
-  background-color: #ecf0fa !important;
+  background-color: #c2c2c2 !important;
 }
 
 .dark-theme .gray-set .bg-gray-200 {
-  background-color: #dde2ef !important;
+  background-color: #c4c4c4 !important;
 }
 
 .dark-theme .gray-set .bg-gray-300 {
@@ -2671,7 +2671,7 @@ body.dark-theme {
 }
 
 .dark-theme .product-sale .wishlist {
-  color: #000;
+  color: #222;
 }
 
 .dark-theme .nav-tabs.preview-thumbnail {
