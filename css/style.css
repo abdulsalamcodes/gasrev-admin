@@ -72768,7 +72768,7 @@ body {
 
 .btn {
   border-radius: 30px;
-  width: 115px;
+  min-width: 115px;
   color: white;
 }
 

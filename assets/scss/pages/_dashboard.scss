@@ -1,10 +1,10 @@
 // @import url(//db.onlinewebfonts.com/c/ad775834db281065fc17e86ad857bf63?family=Cerebri+Sans);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600 &display=swap');
 
 body {
     // background-color: red;
     font-family: "Cerebri sans";
-    font-family: "Open sans",sans-serif;
+    font-family: "Open sans", sans-serif;
     background-color: rgba(131, 9, 0, 0.05);
 }
 
@@ -18,23 +18,29 @@ body {
         padding: 0;
     }
 }
-.table th, .table td {
-    padding: .5rem;
+.table th,
+.table td {
+    padding: 0.5rem;
     vertical-align: middle;
 }
 
 .btn {
     // padding: 10px .2rem;
     border-radius: 30px;
-    width:  115px;
+    min-width: 115px;
     color: white;
 
-    &:hover {cursor: pointer;color: currentColor;}
+    &:hover {
+        cursor: pointer;
+        color: currentColor;
+    }
 
     &__blue {
         background-color: #009cee;
 
-        &:hover {color: currentColor;}
+        &:hover {
+            color: currentColor;
+        }
     }
 
     &__success {
@@ -44,16 +50,24 @@ body {
 
 .card.shadow-custom {
     box-shadow: $custom-shadow !important;
-    box-shadow: 0 0px 85px rgba(0, 0, 0, 0.05);
-  }
+    box-shadow: 0 0 85px rgba(0, 0, 0, 0.05);
+}
 
 
-  td > [class^="fa"] {
-      &:hover {
-          cursor: pointer;
-      }
-  }
+td > [class^="fa"] {
+    &:hover {
+        cursor: pointer;
+    }
+}
 
-  a:hover {
-      color: $primary;
-  }
+a:hover {
+    color: $primary;
+}
+
+
+@media(min-width: 576px) {
+    .dataTables_wrapper .dataTables_filter {
+        float: left;
+        margin-top: 0;
+    }
+}
