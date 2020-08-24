@@ -56,8 +56,8 @@ $.extend( true, DataTable.defaults, {
 /* Default class modification */
 $.extend( DataTable.ext.classes, {
 	sWrapper:      "dataTables_wrapper dt-bootstrap4",
-	sLengthSelect: "bg-primary tx-white",
-	sFilterInput:  "form-control form-control-sm filter-search bg-black-05",
+	sLengthSelect: "tx-white btn-primary btn",
+	sFilterInput:  "form-control form-control-sm bg-black-05",
 	sProcessing:   "dataTables_processing card",
 	sPageButton:   "paginate_button page-item btn"
 } );

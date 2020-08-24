@@ -3,8 +3,8 @@
 
 body {
     // background-color: red;
-    font-family: "Cerebri sans";
-    font-family: "Open sans", sans-serif;
+    // font-family: "Cerebri sans";
+    font-family: "Open sans", sans-serif !important;
     background-color: rgba(131, 9, 0, 0.05);
 }
 
@@ -24,9 +24,15 @@ body {
     vertical-align: middle;
 }
 
+.table thead th, .table td  {
+    padding: .75rem;
+    font-family: "Open sans", sans-serif !important;
+
+}
+
 .btn {
     // padding: 10px .2rem;
-    border-radius: 30px;
+    // border-radius: 30px;
     min-width: 115px;
     color: white;
 
@@ -76,4 +82,14 @@ a:hover {
 .filter-search{
     border-radius: 2rem;
     padding: .3rem;
+}
+
+
+table.dataTable tbody td.sorting_1 {
+    background-color: rgba(131, 9, 0, 0.05);
+}
+
+.main-nav-line .nav-link.active::before {
+    top: 30px;
+
 }
