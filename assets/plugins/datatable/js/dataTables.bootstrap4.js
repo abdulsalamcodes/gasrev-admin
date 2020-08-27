@@ -46,7 +46,7 @@ var DataTable = $.fn.dataTable;
 /* Set the defaults for DataTables initialisation */
 $.extend( true, DataTable.defaults, {
 	dom:
-		"<'row'<'col-sm-12 col-md-6'<'float-left'f>><'col-sm-12 col-md-6'<'float-right mt-0'i>>>" +
+		"<'row'<'col-sm-12 col-md-6'><'col-sm-12 col-md-6'<'float-right mt-0'f>>>" +
 		"<'row'<'col-sm-12'tr>>" +
 		"<'row'<'col-sm-12 col-md-7'<'float-left'p>><'col-sm-12 col-md-5'<'float-right mb-0 mt-3'l>>>",
 	renderer: 'bootstrap'
@@ -59,7 +59,7 @@ $.extend( DataTable.ext.classes, {
 	sLengthSelect: "tx-white btn-primary btn",
 	sFilterInput:  "form-control form-control-sm bg-black-05",
 	sProcessing:   "dataTables_processing card",
-	sPageButton:   "paginate_button page-item btn"
+	sPageButton:   "paginate_button page-item"
 } );
 
 
