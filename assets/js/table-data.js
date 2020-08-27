@@ -1,21 +1,45 @@
 $(function(e) {
 	//file export datatable
 	var table = $('#example').DataTable({
-		lengthChange: false,
-		buttons: [ 'copy', 'excel', 'pdf', 'colvis' ],
+		buttons: [ 'excel', 'pdf'],
+		lengthChange: true,
 		responsive: true,
+		"pageLength": 5,
 		language: {
 			searchPlaceholder: 'Search...',
 			sSearch: '',
 			lengthMenu: '_MENU_ ',
 		}
 	});
+	
 	table.buttons().container()
 	.appendTo( '#example_wrapper .col-md-6:eq(0)' );		
 	
 	$('#example1').DataTable({
+		"pageLength": 5,
 		language: {
 			searchPlaceholder: 'Search users...',
+			sSearch: '',
+			lengthMenu: '_MENU_',
+		}
+	});
+
+	$('#orders').DataTable({
+		"pageLength": 3,
+		lengthChange: true,
+		responsive: true,
+		language: {
+			searchPlaceholder: 'Search...',
+			sSearch: '',
+			lengthMenu: '_MENU_',
+		}
+	});
+	$('#ratings').DataTable({
+		"pageLength": 3,
+		lengthChange: true,
+		responsive: true,
+		language: {
+			searchPlaceholder: 'Search...',
 			sSearch: '',
 			lengthMenu: '_MENU_',
 		}
@@ -45,6 +69,7 @@ $(function(e) {
 	
 	//Details display datatable
 	$('#example-1').DataTable( {
+
 		responsive: true,
 		language: {
 			searchPlaceholder: 'Search...',

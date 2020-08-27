@@ -72778,7 +72778,6 @@ body {
 
 .btn:hover {
   cursor: pointer;
-  color: currentColor;
 }
 
 .btn__blue {

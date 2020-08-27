@@ -38,7 +38,7 @@ body {
 
     &:hover {
         cursor: pointer;
-        color: currentColor;
+        // color: currentColor;
     }
 
     &__blue {
@@ -91,5 +91,6 @@ table.dataTable tbody td.sorting_1 {
 
 .main-nav-line .nav-link.active::before {
     top: 30px;
+    
 
 }
