@@ -9,7 +9,7 @@
 	<meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
 	<meta name="Author" content="Spruko Technologies Private Limited">
 	<meta name="Keywords"
-		content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4" />
+		content="" />
 
 	<!-- Title -->
 	<title> GasREv - Administrative Dashboard </title>
@@ -33,14 +33,9 @@
 	<!--- Internal Morris css-->
 	<link href="../../assets/plugins/morris.js/morris.css" rel="stylesheet">
 
+
 	<!--- Style css --->
-	<link href="../../assets/css/style.css" rel="stylesheet">
-
-	<!--- Dark-mode css --->
-	<link href="../../assets/css/style-dark.css" rel="stylesheet">
-
-	<!---Skinmodes css-->
-	<link href="../../assets/css/skin-modes.css" rel="stylesheet" />
+	<link href="/assets/css/style.css" rel="stylesheet">
 
 	<!---lekeayodele css-->
 	<link href="../../assets/css/lekeayodele.css" rel="stylesheet" />
@@ -64,14 +59,13 @@
 			<div class="main-header-left ">
 				<a class="animated-arrow hor-toggle horizontal-navtoggle"><span></span></a><!-- sidebar-toggle-->
 				<!-- <a class="header-brand" href="index.html">
-						<img src="../../assets/img/brand/logo-white.png" class="desktop-dark">
-						<img src="../../assets/img/brand/logo.png" class="desktop-logo">
-						<img src="../../assets/img/brand/favicon.png" class="desktop-logo-1">
-						<img src="../../assets/img/brand/favicon-white.png" class="desktop-logo-dark">
-					</a> -->
-				<div class="main-header-center  ml-4">
-					<input class="form-control" placeholder="Search for anything..." type="search"><button
-						class="btn"><i class="fe fe-search"></i></button>
+					<img src="../assets/img/brand/logo-white.png" class="desktop-dark">
+					<img src="../assets/img/brand/logo.png" class="desktop-logo">
+					<img src="../assets/img/brand/favicon.png" class="desktop-logo-1">
+					<img src="../assets/img/brand/favicon-white.png" class="desktop-logo-dark">
+				</a> -->
+				<div class="main-header-center  ml-4 bd-0">
+					<input class="form-control bd-0" placeholder="Search for anything..." type="search" style="background-color: rgba(131, 9, 0, 0.05); border: none;"><button class="btn"><i class="fe fe-search"></i></button>
 				</div>
 			</div><!-- search -->
 			<div class="main-header-right">
@@ -417,11 +411,10 @@
 								<div class="tabs-menu1 ">
 									<!-- Tabs -->
 									<ul class="nav panel-tabs main-nav-line justify-content-between">
-										<li class="col-md-3 tx-center"><a href="#tab1" class="nav-link w-100 tx-center d-inline-block  tx-16 tx-custom-grey active" data-toggle="tab"><img
-											src="/assets/img/svgicons/user.svg" alt="">About</a></li>
-										<li class="col-md-3 tx-center"><a href="#tab2" class="nav-link w-100 tx-center  tx-custom-grey tx-16  d-inline-block" data-toggle="tab">Profile</a></li>
-										<li class="col-md-3 tx-center"><a href="#tab3" class="nav-link w-100 tx-center tx-custom-grey  tx-16  d-inline-block" data-toggle="tab">Order</a></li>
-										<li class="col-md-3 tx-center"><a href="#tab4" class="nav-link w-100 tx-center  tx-custom-grey  tx-16 d-inline-block" data-toggle="tab">Ratings</a></li>
+										<li class="col-md-3 tx-center"><a href="#tab1" class="nav-link w-100 tx-center d-inline-block tx-16 tx-custom-grey active" data-toggle="tab"><i class="far fa-user user-icon"></i> About</a></li>
+										<li class="col-md-3 tx-center"><a href="#tab2" class="nav-link w-100 tx-center  tx-custom-grey tx-16  d-inline-block" data-toggle="tab"><i class="far fa-user user-icon"></i> Profile</a></li>
+										<li class="col-md-3 tx-center"><a href="#tab3" class="nav-link w-100 tx-center tx-custom-grey  tx-16  d-inline-block" data-toggle="tab"><i class="far fa-user user-icon"></i> Order</a></li>
+										<li class="col-md-3 tx-center"><a href="#tab4" class="nav-link w-100 tx-center  tx-custom-grey  tx-16 d-inline-block" data-toggle="tab"><i class="far fa-user user-icon"></i> Ratings</a></li>
 									</ul>
 								</div>
 							</div>
@@ -485,10 +478,10 @@
 											<h5  class="tx-left  px-3 pt-3 pb-1">Permission</h5>
 											<hr class="mt-0">
 											<div class="container">
-												<table class="table table-borderless">
-													<tbody class="px-5 ">
-													  <tr class="">
-														<td>User can order gas</td>
+												<table class="table table-borderless" cellpadding="20">
+													<tbody >
+													  <tr >
+														<td >User can order gas</td>
 														<td class="tx-right">
 															<div>
 																<label class="switch valign-center mb-0">

@@ -79,10 +79,6 @@ a:hover {
     }
 }
 
-.filter-search{
-    border-radius: 2rem;
-    padding: .3rem;
-}
 
 
 table.dataTable tbody td.sorting_1 {
@@ -90,6 +86,19 @@ table.dataTable tbody td.sorting_1 {
 }
 .main-nav-line .nav-link {
     color: #a3a3a3;
+} 
+.main-nav-line .nav-link {
+
+    .user-icon {
+        display: none;
+    }
+
+    &:hover, &.active {
+        .user-icon {
+            display: inline;
+            color: $primary;
+        } 
+    }
 }
 .main-nav-line .nav-link.active::before {
     top: 30px;

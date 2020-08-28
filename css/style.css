@@ -72814,17 +72814,21 @@ a:hover {
   }
 }
 
-.filter-search {
-  border-radius: 2rem;
-  padding: .3rem;
-}
-
 table.dataTable tbody td.sorting_1 {
   background-color: rgba(131, 9, 0, 0.05);
 }
 
 .main-nav-line .nav-link {
   color: #a3a3a3;
+}
+
+.main-nav-line .nav-link .user-icon {
+  display: none;
+}
+
+.main-nav-line .nav-link:hover .user-icon, .main-nav-line .nav-link.active .user-icon {
+  display: inline;
+  color: #830900;
 }
 
 .main-nav-line .nav-link.active::before {
