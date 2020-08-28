@@ -24,8 +24,9 @@ $(function(e) {
 		}
 	});
 
-	$('#orders').DataTable({
-		"pageLength": 3,
+	var table = $('#orders').DataTable({
+		buttons: [ 'excel', 'pdf'],
+		"pageLength": 5,
 		lengthChange: true,
 		responsive: true,
 		language: {
@@ -34,8 +35,13 @@ $(function(e) {
 			lengthMenu: '_MENU_',
 		}
 	});
-	$('#ratings').DataTable({
-		"pageLength": 3,
+
+	table.buttons().container()
+	.appendTo( '#orders_wrapper .col-md-6:eq(0)' );	
+
+	var table = $('#ratings').DataTable({
+		buttons: [ 'excel', 'pdf'],
+		"pageLength": 5,
 		lengthChange: true,
 		responsive: true,
 		language: {
@@ -44,6 +50,9 @@ $(function(e) {
 			lengthMenu: '_MENU_',
 		}
 	});
+	
+	table.buttons().container()
+	.appendTo( '#ratings_wrapper .col-md-6:eq(0)' );	
 	
 	var table = $('#example-delete').DataTable({
 		responsive: true,

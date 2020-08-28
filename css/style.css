@@ -72823,6 +72823,26 @@ table.dataTable tbody td.sorting_1 {
   background-color: rgba(131, 9, 0, 0.05);
 }
 
+.main-nav-line .nav-link {
+  color: #a3a3a3;
+}
+
 .main-nav-line .nav-link.active::before {
   top: 30px;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  min-width: 250px;
+  border-radius: 50px;
+  padding: 1.2rem;
+}
+
+.pagination .page-link:hover {
+  background-color: #830900 !important;
+}
+
+.paginate_button.page-item.previous .page-link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
