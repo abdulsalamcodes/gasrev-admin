@@ -72760,6 +72760,10 @@ body {
   padding: 0;
 }
 
+.table th {
+  white-space: nowrap;
+}
+
 .table th,
 .table td {
   padding: 0.5rem;
@@ -72850,4 +72854,19 @@ div.dataTables_wrapper div.dataTables_filter input {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.center-item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.color-66 {
+  color: #666666;
+}
+
+.order__label {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f12711), to(#fd7201));
+  background-image: linear-gradient(to right, #f12711, #fd7201);
 }

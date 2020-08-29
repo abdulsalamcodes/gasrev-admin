@@ -8,6 +8,8 @@ body {
     background-color: rgba(131, 9, 0, 0.05);
 }
 
+
+// Reset
 .navbar-form .form-control {
     background-color: rgba(131, 9, 0, 0.05);
 }
@@ -17,6 +19,9 @@ body {
     .card-dashboard-eight {
         padding: 0;
     }
+}
+.table th {
+    white-space: nowrap;
 }
 .table th,
 .table td {
@@ -31,8 +36,6 @@ body {
 }
 
 .btn {
-    // padding: 10px .2rem;
-    // border-radius: 30px;
     min-width: 115px;
     color: white;
 
@@ -119,4 +122,21 @@ div.dataTables_wrapper div.dataTables_filter input {
 .paginate_button.page-item.previous .page-link {
     width:max-content;
     // min-width: 50px;
+}
+
+// Custom Utility Classess
+
+.center-item {
+    display: grid;
+    place-items: center;
+}
+
+.color-66 {
+    color: #666666;
+}
+
+// 
+
+.order__label {
+    background-image: linear-gradient(to right, #f12711, #fd7201);
 }
