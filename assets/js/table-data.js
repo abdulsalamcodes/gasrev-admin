@@ -1,5 +1,9 @@
 $(function(e) {
 	//file export datatable
+
+	/*************************************************************
+	 * Datatable template with buttons. Used in multilple files in this project.
+	 */
 	var table = $('#example').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		lengthChange: true,
@@ -14,6 +18,9 @@ $(function(e) {
 	table.buttons().container()
 	.appendTo( '#example_wrapper .col-md-6:eq(0)' );		
 	
+	/********************************************
+	 * Datatable for outlets table with buttons.
+	 */
 	var table = $('#outlet').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		lengthChange: true,
@@ -29,6 +36,9 @@ $(function(e) {
 	table.buttons().container()
 	.appendTo( '#outlet_wrapper .col-md-6:eq(0)' );		
 	
+	/********************************************
+	 * Datatable for outlets table with buttons.
+	 */
 	var table = $('#outlet1').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		lengthChange: true,
@@ -42,8 +52,11 @@ $(function(e) {
 	});
 
 	table.buttons().container()
-	.appendTo( '#outlet1_wrapper .col-md-6:eq(0)' );		
-	
+	.appendTo( '#outlet1_wrapper .col-md-6:eq(0)' );
+
+	/********************************************
+	 * Datatable for outlets table with buttons.
+	 */
 	var table = $('#outletDeliveries').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		lengthChange: true,
@@ -56,8 +69,11 @@ $(function(e) {
 		}
 	});
 	table.buttons().container()
-	.appendTo( '#outletDeliveries_wrapper .col-md-6:eq(0)' );		
+	.appendTo( '#outletDeliveries_wrapper .col-md-6:eq(0)' );
 	
+	/********************************************
+	 * Datatable for outlets table with buttons.
+	 */
 	var table = $('#outletDeliveries1').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		lengthChange: true,
@@ -75,7 +91,9 @@ $(function(e) {
 
 
 
-	// Users rating
+	/********************************************
+	 * Datatable for ratings table with buttons. Used in multiple files in this project
+	 */
 	var table = $('#ratings').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		"pageLength": 5,
@@ -90,7 +108,9 @@ $(function(e) {
 	table.buttons().container()
 	.appendTo( '#ratings_wrapper .col-md-6:eq(0)' );	
 
-	// Users rating
+	/********************************************
+	 * Datatable for Orders table with buttons.
+	 */
 	var table = $('#orders').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		"pageLength": 5,
