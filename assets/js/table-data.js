@@ -11,34 +11,71 @@ $(function(e) {
 			lengthMenu: '_MENU_ ',
 		}
 	});
-	
 	table.buttons().container()
 	.appendTo( '#example_wrapper .col-md-6:eq(0)' );		
 	
-	$('#example1').DataTable({
-		"pageLength": 5,
-		language: {
-			searchPlaceholder: 'Search users...',
-			sSearch: '',
-			lengthMenu: '_MENU_',
-		}
-	});
-
-	var table = $('#orders').DataTable({
+	var table = $('#outlet').DataTable({
 		buttons: [ 'excel', 'pdf'],
-		"pageLength": 5,
 		lengthChange: true,
 		responsive: true,
+		"pageLength": 5,
 		language: {
 			searchPlaceholder: 'Search...',
 			sSearch: '',
-			lengthMenu: '_MENU_',
+			lengthMenu: '_MENU_ ',
 		}
 	});
 
 	table.buttons().container()
-	.appendTo( '#orders_wrapper .col-md-6:eq(0)' );	
+	.appendTo( '#outlet_wrapper .col-md-6:eq(0)' );		
+	
+	var table = $('#outlet1').DataTable({
+		buttons: [ 'excel', 'pdf'],
+		lengthChange: true,
+		responsive: true,
+		"pageLength": 5,
+		language: {
+			searchPlaceholder: 'Search...',
+			sSearch: '',
+			lengthMenu: '_MENU_ ',
+		}
+	});
 
+	table.buttons().container()
+	.appendTo( '#outlet1_wrapper .col-md-6:eq(0)' );		
+	
+	var table = $('#outletDeliveries').DataTable({
+		buttons: [ 'excel', 'pdf'],
+		lengthChange: true,
+		responsive: true,
+		"pageLength": 5,
+		language: {
+			searchPlaceholder: 'Search...',
+			sSearch: '',
+			lengthMenu: '_MENU_ ',
+		}
+	});
+	table.buttons().container()
+	.appendTo( '#outletDeliveries_wrapper .col-md-6:eq(0)' );		
+	
+	var table = $('#outletDeliveries1').DataTable({
+		buttons: [ 'excel', 'pdf'],
+		lengthChange: true,
+		responsive: true,
+		"pageLength": 5,
+		language: {
+			searchPlaceholder: 'Search...',
+			sSearch: '',
+			lengthMenu: '_MENU_ ',
+		}
+	});
+	table.buttons().container()
+	.appendTo( '#outletDeliveries1_wrapper .col-md-6:eq(0)' );		
+	
+
+
+
+	// Users rating
 	var table = $('#ratings').DataTable({
 		buttons: [ 'excel', 'pdf'],
 		"pageLength": 5,
@@ -50,10 +87,30 @@ $(function(e) {
 			lengthMenu: '_MENU_',
 		}
 	});
-	
 	table.buttons().container()
 	.appendTo( '#ratings_wrapper .col-md-6:eq(0)' );	
+
+	// Users rating
+	var table = $('#orders').DataTable({
+		buttons: [ 'excel', 'pdf'],
+		"pageLength": 5,
+		lengthChange: true,
+		responsive: true,
+		language: {
+			searchPlaceholder: 'Search...',
+			sSearch: '',
+			lengthMenu: '_MENU_',
+		}
+	});
+	table.buttons().container()
+	.appendTo( '#orders_wrapper .col-md-6:eq(0)' );	
+
+
+
 	
+	
+
+
 	var table = $('#example-delete').DataTable({
 		responsive: true,
 		language: {

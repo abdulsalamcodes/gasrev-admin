@@ -89,22 +89,36 @@ table.dataTable tbody td.sorting_1 {
 }
 .main-nav-line .nav-link {
     color: #a3a3a3;
+    transition: all .4s;
 } 
 .main-nav-line .nav-link {
 
     .user-icon {
         display: none;
     }
-
+    
     &:hover, &.active {
         .user-icon {
+            transition: all .3s ease-in-out;
             display: inline;
             color: $primary;
         } 
     }
 }
 .main-nav-line .nav-link.active::before {
-    top: 30px;
+    top: 40px;
+    animation: stretch .5s ease-in-out;
+}
+
+@keyframes stretch {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
 }
 
 

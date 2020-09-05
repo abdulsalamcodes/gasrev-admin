@@ -89,26 +89,26 @@ License        :   Licensed under ThemeForest License
 /* ######## BOOTSTRAP ######## */ 
 @import "variables";
 @import "bootstrap/custom";
-// @import "bootstrap/accordion";
+@import "bootstrap/accordion";
 @import "bootstrap/alerts";
-// @import "bootstrap/badge";
+@import "bootstrap/badge";
 @import "bootstrap/breadcrumbs";
 @import "bootstrap/buttons";
 @import "bootstrap/cards";
-// @import "bootstrap/carousel";
+@import "bootstrap/carousel";
 @import "bootstrap/dropdown";
 @import "bootstrap/forms";
 @import "bootstrap/grid";
-// @import "bootstrap/input-group";
-// @import "bootstrap/modals";
+@import "bootstrap/input-group";
+@import "bootstrap/modals";
 @import "bootstrap/nav";
-// @import "bootstrap/paginations";
+@import "bootstrap/paginations";
 @import "bootstrap/popover";
 @import "bootstrap/progress";
 @import "bootstrap/tables";
-// @import "bootstrap/toast";
-// @import "bootstrap/tooltip";
-// @import "bootstrap/tabs";
+@import "bootstrap/toast";
+@import "bootstrap/tooltip";
+@import "bootstrap/tabs";
 
 /*  ######## CUSTOM-STYLES ######## */ 
 @import "custom/checkbox";
