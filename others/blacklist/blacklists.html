@@ -71,7 +71,7 @@
 						<img src="../assets/img/brand/favicon.png" class="desktop-logo-1">
 						<img src="../assets/img/brand/favicon-white.png" class="desktop-logo-dark">
 					</a> -->
-					<div class="main-header-center bd-0 ml-4">
+					<div class="main-header-center  ml-4">
 						<input class="form-control" placeholder="Search for anything..." type="search" style="background-color: rgba(131, 9, 0, 0.05);  border: none;"><button class="btn"><i class="fe fe-search"></i></button>
 					</div>
 				</div><!-- search -->
@@ -190,11 +190,11 @@
 							<a class="new nav-link full-screen-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg></a>
 						</div>
 						<div class="dropdown main-profile-menu nav nav-item nav-link">
-							<a class="profile-user d-flex align-items-center" href=""><img alt="" src="../../assets/img/faces/ayo-happy.jpg" class="mr-1"><span>Lagbaja Tamedu</span> </a>
+							<a class="profile-user d-flex align-items-center" href=""><img alt="" src="/assets/img/faces/ayo-happy.jpg" class="mr-1"><span>Lagbaja Tamedu</span> </a>
 							<div class="dropdown-menu">
 								<div class="main-header-profile bg-primary p-3">
 									<div class="d-flex wd-100p">
-										<div class="main-img-user"><img alt="" src="../../assets/img/faces/ayo-happy.jpg" class=""></div>
+										<div class="main-img-user"><img alt="" src="/assets/img/faces/ayo-happy.jpg" class=""></div>
 										<div class="ml-3 my-auto">
 											<h6>Bayo Adesina</h6><span>Super Admin</span>
 										</div>
@@ -203,6 +203,7 @@
 								<a class="dropdown-item" href="page-signin.html"><i class="bx bx-log-out"></i> Sign Out</a>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -237,7 +238,7 @@
 
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><img src="/assets/img/svgicons/user.svg" alt=""> Users<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="../user/user-data.html" class="slide-item"> Users</a></li>
+									<li aria-haspopup="true"><a href="#" class="slide-item"> Users</a></li>
 									<li aria-haspopup="true"><a href="../Agent/list-agent.html" class="slide-item">Agents</a></li>
 									<li aria-haspopup="true"><a href="../Outlet/list-outlets.html" class="slide-item">Outlets</a></li>
 								</ul>
@@ -289,8 +290,8 @@
 			<header class="breadcrumb-header justify-content-between">
 				<div class="my-auto">
 					<div class="d-flex">
-						<h4 class="content-title mb-0 my-auto tx-14">Users</h4><span
-							class="tx-primary tx-xs-semibold active mt-1 tx-14 ml-2 mb-0">/ Agents </span>
+						<h4 class="content-title mb-0 my-auto tx-14">Others</h4><span
+							class="tx-primary tx-xs-semibold active mt-1 tx-14 ml-2 mb-0">/ List Blacklist </span>
 					</div>
 				</div>
 			</header>
@@ -301,16 +302,22 @@
 					<div class="col-xl-12">
 						<div class="card bd-0">
 							<div class="card-header pb-0">
-								<h4 class="text-capitalize tx-xs-semibold tx-24 tx-custom-grey">List Outlet</h4>
+							
+								<div class="d-flex justify-content-between mb-4 align-items-center">
+									<h4 class="text-capitalize tx-xs-semibold tx-24 tx-custom-grey">List Blacklists</h4>
+									<a href="./add-new-blacklist.html" class="tx-white btn-rounded px-4 py-2 tx-16 tx-xs-medium text-capitalize d-inline-block bg-primary">Add New Blacklist</a>
+								</div>
+
 
 							<div class="row">
-								<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+								<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
 									<div class="card bd-0 shadow-custom">
 										<div class="card-body bd-0">
 											<div class="card-order">
 												<h2 class="mb-2 tx-xs-semibold tx-30">116,000</h2>
 												<div class="row align-items-center">
-													<h5 class="col-8 mb-0 tx-custom-grey tx-20">Total Agents</h5>
+													<h5 class="col-8 mb-0 tx-custom-grey tx-20">Total Banned
+														Agent</h5>
 													<div class=" col-4 feature mt-0 mb-0">
 														<i
 															class="fe fe-users project" style="width: 62px; height: 62px; background-color: #c3272e1a; color: #c3272e;"></i>
@@ -321,13 +328,14 @@
 										</div>
 									</div>
 								</div><!-- COL END -->
-								<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+								<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
 									<div class="card border-0 shadow-custom">
 										<div class="card-body">
 											<div class="card-order">
 												<h2 class="mb-2 tx-xs-semibold tx-30">116,000</h2>
 												<div class="row align-items-center">
-													<h5 class="col-8 mb-0 tx-20 tx-custom-grey">Active Agents</h5>
+													<h5 class="col-8 mb-0 tx-20 tx-custom-grey">Total Banned
+														Outlet</h5>
 													<div class=" col-4 feature mt-0 mb-0">
 														<i
 															class="fe fe-users project" style="width: 62px; height: 62px; background-color: #c3272e1a; color: #ed7924;"></i>
@@ -338,13 +346,14 @@
 										</div>
 									</div>
 								</div><!-- COL END -->
-								<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+								<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
 									<div class="card border-0 shadow-custom">
 										<div class="card-body">
 											<div class="card-order">
 												<h2 class="mb-2 tx-xs-semibold tx-30">116,000</h2>
 												<div class="row align-items-center">
-													<h5 class="col-8 mb-0 tx-20 tx-custom-grey">Banned Agents</h5>
+													<h5 class="col-8 mb-0 tx-20 tx-custom-grey">Total Banned
+														User</h5>
 													<div class=" col-4 feature mt-0 mb-0">
 														<i
 															class="fe fe-users project" style="width: 62px; height: 62px; background-color: #c3272e1a; color: #c3272e;"></i>
@@ -355,29 +364,12 @@
 										</div>
 									</div>
 								</div><!-- COL END -->
-								<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-									<div class="card border-0 shadow-custom">
-										<div class="card-body">
-											<div class="card-order">
-												<h2 class="mb-2 tx-xs-semibold tx-30">116,000</h2>
-												<div class="row align-items-center">
-													<h5 class="col-8 mb-0 tx-20 tx-custom-grey">Deleted Agent</h5>
-													<div class=" col-4 feature mt-0 mb-0">
-														<i
-															class="fe fe-users project" style="width: 62px; height: 62px; background-color: #c3272e1a; color: #c3272e;"></i>
-													</div>
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div><!-- COL END -->
+								
 
 							</div>
 								
 							</div>
 
-								
 
 							<div class="card-body">
 								
@@ -387,11 +379,9 @@
 										<thead>
 											<tr class="rounded-top">
 												<th scope="col"  class="border-bottom-0 tx-15 tx-xs-medium">ID</th>
-												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Agent Name </th>
-												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Emai Address</th>
-												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Phone</th>
-												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Number of Outlets</th>
-												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Date Registered</th>
+												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Name </th>
+												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">User type</th>
+												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Date Added</th>
 												<th scope="col" class="border-bottom-0 text-capitalize tx-15 tx-xs-medium">Action</th>
 											</tr>
 										</thead>
@@ -399,409 +389,192 @@
 											<tr class="">
 												<td class="tx-blue">1</td>
 												<td>
-													<a href="./single-agent.html" class="tx-blue">
+													<a href="./single-user.html" class="tx-blue">
 														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
 													</a>
 												</td>
-												<td class="tx-blue">garrettwinters@gmail.come</td>
-												<td class="tx-blue">09023465971</td>
-												<td>14</td>
-												<td>1/2/2020</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
 												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">2</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Donna Snider
-													</a>
-												</td>
-												<td class="tx-blue">snider@gmail.come</td>
-												<td class="tx-blue">09023465971</td>
-												 <td>71</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban d-inline-block mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td  class="tx-blue">3</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Kelvin Greer
-													</a>
-												</td>
-												<td class="tx-blue">kelvingreer@gmail.come</td>
-												<td class="tx-blue">08034465971</td>
-												 <td>17</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">4</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Polwell Pop
-													</a>
-												</td>
-												<td class="tx-blue">polwell@gmail.come</td>
-												<td class="tx-blue">07095665971</td>
-												 <td>22</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">5</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Hermione Butler
-													</a>
-												</td>
-												<td class="tx-blue">butler@gmail.come</td>
-												<td class="tx-blue">090335665971</td>
-												 <td>20</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-user.html" class="">
-														<i class="fas py-2 tx-black fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">6</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Cara Stevens
-													</a>
-												</td>
-												<td class="tx-blue">stevens@gmail.come</td>
-												<td class="tx-blue">090225664371</td>
-												 <td>44</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-user.html" class="">
-														<i class="fas py-2 tx-black fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">7</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Butler Cara 
-													</a>
-												</td>
-												<td class="tx-blue">butler@gmail.come</td>
-												<td class="tx-blue">090225664371</td>
-												 <td>10</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">8</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Sakura Yamamoto
-													</a>
-												</td>
-												<td class="tx-blue">sakurayamamoto@gmail.come</td>
-												<td class="tx-blue">070895668071</td>
-												 <td>14</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">9</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Finn Camacho
-													</a>
-												</td>
-												<td class="tx-blue">finn@gmail.come</td>
-												<td class="tx-blue">090005668071</td>
-												 <td>14</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">10</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Serge Baldwin
-													</a>
-												</td>
-												<td class="tx-blue">decker@gmail.come</td>
-												<td class="tx-blue">09090056680</td>
-												 <td>14</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">11</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Shad Decker
-													</a>
-												</td>
-												<td class="tx-blue">saradoe.email.com</td>
-												<td class="tx-blue">07042056690</td>
-												 <td>23</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">12</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Michael Bruce
-													</a>
-												</td>
-												<td class="tx-blue">bruce@gmail.come</td>
-												<td class="tx-blue">08090056090</td>
-												 <td>44</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">13</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Decker Michael 
-													</a>
-												</td>
-												<td class="tx-blue">micheal@gmail.come</td>
-												<td class="tx-blue">09053056090</td>
-												 <td>44</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
-											<tr class="">
-												<td class="tx-blue">14</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Bruno Nash
-													</a>
-												</td>
-												<td class="tx-blue">akinlua@gmail.come</td>
-												<td class="tx-blue">09075056090</td>
-												 <td>35</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
-													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
-													 
-			
-												</td>
-											</tr>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
 
-											<tr class="">
-												<td class="tx-blue">15</td>
-												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Akinlua Nash Store
-													</a>
-												</td>
-												<td class="tx-blue">akinlua@gmail.come</td>
-												<td class="tx-blue">08044806090</td>
-												 <td>35</td>
-												<td>1/2/2020</td>
-												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
 													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
 													 
 			
 												</td>
 											</tr>
 											<tr class="">
-												<td class="tx-blue">16</td>
+												<td class="tx-blue">1</td>
 												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Debbie  Store
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
 													</a>
 												</td>
-												<td class="tx-blue">debbie@gmail.come</td>
-												<td class="tx-blue">07094806080</td>
-												 <td>60</td>
-												<td>1/2/2020</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
 												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
 													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
 													 
 			
 												</td>
 											</tr>
 											<tr class="">
-												<td class="tx-blue">17</td>
+												<td class="tx-blue">1</td>
 												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Neta D.  Store
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
 													</a>
 												</td>
-												<td class="tx-blue">neta@gmail.come</td>
-												<td class="tx-blue">07044806082</td>
-												 <td>12</td>
-												<td>1/2/2020</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
 												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
 													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
 													 
 			
 												</td>
 											</tr>
 											<tr class="">
-												<td class="tx-blue">18</td>
+												<td class="tx-blue">1</td>
 												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Oluwatomiwa  Peace
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
 													</a>
 												</td>
-												<td class="tx-blue">oluwatomiwa@gmail.come</td>
-												<td class="tx-blue">07044896088</td>
-												 <td>32</td>
-												<td>1/2/2020</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
 												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
 													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
 													 
 			
 												</td>
 											</tr>
 											<tr class="">
-												<td class="tx-blue">19</td>
+												<td class="tx-blue">1</td>
 												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Mama B. store
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
 													</a>
 												</td>
-												<td class="tx-blue">mamabee@gmail.come</td>
-												<td class="tx-blue">07066896099</td>
-												 <td>19</td>
-												<td>1/2/2020</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
 												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
 													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
 													 
 			
 												</td>
 											</tr>
 											<tr class="">
-												<td class="tx-blue">20</td>
+												<td class="tx-blue">1</td>
 												<td>
-													<a href="./single-agent.html" class="tx-blue">
-														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Mama D. store
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
 													</a>
 												</td>
-												<td class="tx-blue">mamadee@gmail.come</td>
-												<td class="tx-blue">07095896099</td>
-												 <td>29</td>
-												<td>1/2/2020</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
 												<td>
-													<a href="./single-agent.html" class="">
-														<i class="fas py-2  fa-edit"></i>
-													</a>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
 													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
 													 
 			
 												</td>
 											</tr>
+											<tr class="">
+												<td class="tx-blue">1</td>
+												<td>
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
+													</a>
+												</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
+												<td>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
+													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
+													 
 			
+												</td>
+											</tr>
+											<tr class="">
+												<td class="tx-blue">1</td>
+												<td>
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
+													</a>
+												</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
+												<td>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
+													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
+													 
 			
+												</td>
+											</tr>
+											<tr class="">
+												<td class="tx-blue">1</td>
+												<td>
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
+													</a>
+												</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
+												<td>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
+													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
+													 
 			
+												</td>
+											</tr>
+											<tr class="">
+												<td class="tx-blue">1</td>
+												<td>
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
+													</a>
+												</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
+												<td>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
+													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
+													 
+			
+												</td>
+											</tr>
+											<tr class="">
+												<td class="tx-blue">1</td>
+												<td>
+													<a href="./single-user.html" class="tx-blue">
+														<img class="avatar-sm rounded-circle mr-2 my-auto" src="/assets/img/faces/5.jpg"alt="Image description">Garrett Winters
+													</a>
+												</td>
+												<td>Outlet</td>
+												<td>19/06/2020; 1:42pm</td>
+												<td>
+																										<a  href="#"><img src="/assets/img/svgicons/check-circle.svg" class="image-fluid mr-2" alt=""></a>
+
+													<i class="fas py-2 fa-ban mx-1" data-target="#banmodal" data-toggle="modal"></i>
+													 
+			
+												</td>
+											</tr>
+										
+										
 										</tbody>
 										
 									</table>

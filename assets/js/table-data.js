@@ -127,6 +127,16 @@ $(function(e) {
 
 
 
+	var table = $('#example-paginate').DataTable({
+		responsive: true,
+		"pageLength": 3,
+		lengthChange: true,
+		language: {
+			// searchPlaceholder: 'Search...',
+			sSearch: '',
+			lengthMenu: '_MENU_',
+		}
+	});
 	
 	
 

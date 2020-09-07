@@ -10,34 +10,45 @@
 		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
 
 		<!-- Title -->
-		<title> GasREV dashboard </title>
+		<title> GasREv - Administrative Dashboard </title>
+
+		<!-- Boogle Fonts -->
+
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
 
 		<!-- Favicon -->
-		<link rel="icon" href=".c./assets/img/brand/favicon.png" type="image/x-icon"/>
+		<link rel="icon" href="/assets/img/brand/favicon.png" type="image/x-icon"/>
 
 		<!-- Icons css -->
-		<link href="../assets/css/icons.css" rel="stylesheet">
+		<link href="/assets/css/icons.css" rel="stylesheet">
+
+		<!-- Internal Data table css -->
+		<link href="/assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+		<link href="/assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+		<link href="/assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+		<link href="/assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+		<link href="/assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+		<link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+		<!--  Right-sidemenu css -->
+		<link href="/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
 
 		<!--  Custom Scroll bar-->
-		<link href="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+		<link href="/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
 
-		<!--  Sidebar css -->
-		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
-
-		<!--- Internal Morris css-->
-		<link href="../assets/plugins/morris.js/morris.css" rel="stylesheet">
-
-		<!--- Style css --->
-		<link href="../assets/css/style.css" rel="stylesheet">
-
-		<!--- Dark-mode css --->
-		<link href="../assets/css/style-dark.css" rel="stylesheet">
+		<!--- Style css-->
+		<link href="/assets/css/style.css" rel="stylesheet">
+		<link href="/assets/css/style-dark.css" rel="stylesheet">
 
 		<!---Skinmodes css-->
-		<link href="../assets/css/skin-modes.css" rel="stylesheet" />
+		<link href="/assets/css/skin-modes.css" rel="stylesheet" />
 
-		<!---lekeayodele css-->
-		<link href="../assets/css/lekeayodele.css" rel="stylesheet" />
+		<!--- Animations css-->
+		<link href="/assets/css/animate.css" rel="stylesheet">
+
+		<link href="/assets/css/lekeayodele.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="/css/style.css">
 
 	</head>
 
@@ -45,7 +56,7 @@
 
 		<!-- Loader -->
 		<div id="global-loader">
-			<img src="../assets/img/loader.svg" class="loader-img" alt="Loader">
+			<img src="/assets/img/loader.svg" class="loader-img" alt="Loader">
 		</div>
 		<!-- /Loader -->
 
@@ -60,8 +71,8 @@
 						<img src="../assets/img/brand/favicon.png" class="desktop-logo-1">
 						<img src="../assets/img/brand/favicon-white.png" class="desktop-logo-dark">
 					</a> -->
-					<div class="main-header-center  ml-4">
-						<input class="form-control" placeholder="Search for anything..." type="search"><button class="btn"><i class="fe fe-search"></i></button>
+					<div class="main-header-center  bd-0 ml-4">
+						<input class="form-control bd-0" placeholder="Search for anything..." type="search" style="background-color: rgba(131, 9, 0, 0.05);"><button class="btn"><i class="fe fe-search"></i></button>
 					</div>
 				</div><!-- search -->
 				<div class="main-header-right">
@@ -179,11 +190,11 @@
 							<a class="new nav-link full-screen-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg></a>
 						</div>
 						<div class="dropdown main-profile-menu nav nav-item nav-link">
-							<a class="profile-user d-flex" href=""><img alt="" src="../assets/img/faces/ayo-happy.jpg"></a>
+							<a class="profile-user d-flex align-items-center" href=""><img alt="" src="/assets/img/faces/ayo-happy.jpg" class="mr-1"><span>Lagbaja Tamedu</span> </a>
 							<div class="dropdown-menu">
 								<div class="main-header-profile bg-primary p-3">
 									<div class="d-flex wd-100p">
-										<div class="main-img-user"><img alt="" src="../assets/img/faces/ayo-happy.jpg" class=""></div>
+										<div class="main-img-user"><img alt="" src="/assets/img/faces/ayo-happy.jpg" class=""></div>
 										<div class="ml-3 my-auto">
 											<h6>Bayo Adesina</h6><span>Super Admin</span>
 										</div>
@@ -206,9 +217,9 @@
 					<!--Nav-->
 					<nav class="horizontalMenu clearfix">
 						<ul class="horizontalMenu-list">
-							<li aria-haspopup="true" ><a href="/index.html" class=""><img src="/assets/img/svgicons/home.svg" alt="">  Dashboard</a></li>
+							<li aria-haspopup="true" class="active"><a href="index.html" class=""><img src="/assets/img/svgicons/home.svg" alt="">  Dashboard</a></li>
 
-							<li aria-haspopup="true"><a href="/settings/general-settings.html" class="sub-icon"><img src="/assets/img/svgicons/settings-icon.svg" alt="">  Settings<i class="fe fe-chevron-down horizontal-icon"></i></a>
+							<li aria-haspopup="true"><a href="/settings/general-settings.html" class="sub-icon"><img src="/assets/img/svgicons/settings-icon.svg" alt=""> Settings<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/settings/general-settings.html" class="slide-item">General Settings</a></li>
 									<li aria-haspopup="true"><a href="/settings/system-settings.html" class="slide-item">System Settings</a></li>
@@ -223,39 +234,46 @@
 									<li aria-haspopup="true"><a href="/settings/security-settings.html" class="slide-item"> Security Settings</a></li>
 								</ul>
 							</li>
+
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><img src="/assets/img/svgicons/user.svg" alt=""> Users<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="./users/user/profile.html" class="slide-item"> Users</a></li>
-									<li aria-haspopup="true"><a href="./users/Agent/list-agent.html" class="slide-item">Agents</a></li>
-									<li aria-haspopup="true"><a href="./users/Outlet/list-outlets.html" class="slide-item">Outlets</a></li>
+									<li aria-haspopup="true"><a href="/users/user/user-data.html" class="slide-item"> Users</a></li>
+									<li aria-haspopup="true"><a href="/users/Agent/list-agent.html" class="slide-item">Agents</a></li>
+									<li aria-haspopup="true"><a href="/users/Outlet/list-outlets.html" class="slide-item">Outlets</a></li>
 								</ul>
 							</li>
-							<li aria-haspopup="true"><a href="#" class="sub-icon"><img src="/assets/img/svgicons/shopping-cart.svg" alt="">Orders<i class="fe fe-chevron-down horizontal-icon"></i></a>
+							<li aria-haspopup="true"><a href="#" class="sub-icon"><img src="/assets/img/svgicons/shopping-cart.svg" alt="">  Orders <i class="fe fe-chevron-down horizontal-icon"></i> </a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="./orders/user-order.html" class="slide-item"> Users Orders</a></li>
-									<li aria-haspopup="true"><a href="./orders/outlet-order.html" class="slide-item"> Outlet Orders</a></li>
-									<li aria-haspopup="true"><a href="./orders/custom-order.html" class="slide-item">Custom Orders</a></li>
+									<li aria-haspopup="true"><a href="/Orders/user-order.html" class="slide-item"> Users Orders</a></li>
+									<li aria-haspopup="true"><a href="/Orders/outlet-order.html" class="slide-item"> Outlet Orders</a></li>
+									<li aria-haspopup="true"><a href="/Orders/custom-order.html" class="slide-item">Custom Orders</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><img src="/assets/img/svgicons/gift.svg" alt="">  Requests <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="requests/withdrawal-request.html" class="slide-item"> Payments</a></li>
-									<li aria-haspopup="true"><a href="requests/rollover-request.html" class="slide-item" >RollOver</a></li>
+									<li aria-haspopup="true"><a href="/requests/withdrawal-request.html" class="slide-item"> Payments</a></li>
+									<li aria-haspopup="true"><a href="/requests/rollover-request.html" class="slide-item" >RollOver</a></li>
 								</ul>
 							</li>
-							<li aria-haspopup="true"><a href="verifications-requests.html" class="sub-icon"><img src="/assets/img/svgicons/key.svg" alt="">  Verifications Requests</li>
-							<li aria-haspopup="true" class="active"><img src="/assets/img/svgicons/database.svg" alt="">  GasREV <i class="fe fe-chevron-down horizontal-icon"></i></a>
+
+							<li aria-haspopup="true">
+								<a href="/verifications-requests.html" class="sub-icon"><img src="/assets/img/svgicons/key.svg" alt="">  Verifications Requests</a>
+							</li>
+
+							<li aria-haspopup="true">
+								<a href="#"><img src="/assets/img/svgicons/database.svg" alt=""> GasREV <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="products/add-product.htm.html" class="slide-item">Products</a></li>
-									<li aria-haspopup="true"><a href="investments/investment.html" class="slide-item">Investment</a></li>
+									<li aria-haspopup="true"><a href="/GasREV/Products/all-product.html" class="slide-item">Products</a></li>
+									<li aria-haspopup="true"><a href="/GasREV/investments/investment.html" class="slide-item">Investment</a></li>
 								</ul>
 							</li>
-							<li aria-haspopup="true" ><a href="#" ><img src="/assets/img/svgicons/layers.svg" alt="">  Others   <i class="fe fe-chevron-down horizontal-icon"></i></a>
+							<li aria-haspopup="true" >
+								<a href="#" class="active"><img src="/assets/img/svgicons/layers.svg" alt=""> Others <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="/Mass Notifiaction/sent-notifications.html" class="slide-item">Mass Notification</a></li>
+									<li aria-haspopup="true"><a href="send-new-notifications.html" class="slide-item">Mass Notification</a></li>
 									<li aria-haspopup="true"><a href="../garbage-collector.html" class="slide-item">Garbage Collector</a></li>
-									<li aria-haspopup="true"><a href="blacklist/blacklists.html" class="slide-item">Blacklist</a></li>
-									<li aria-haspopup="true"><a href="ratings.html" class="slide-item">Ratings</a></li>
+									<li aria-haspopup="true"><a href="../blacklist/blacklists.html" class="slide-item">Blacklist</a></li>
+									<li aria-haspopup="true"><a href="../ratings.html" class="slide-item">Ratings</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="reports.html" class="sub-icon"><img src="/assets/img/svgicons/file-text.svg" alt="">  Reports </a></li>
@@ -273,99 +291,179 @@
 			<!-- container opened -->
 			<div class="container">
 
-			
 				<!-- breadcrumb -->
-				<div class="breadcrumb-header justify-content-between">
-					<div class="my-auto">
-						<div class="d-flex">
-							<h4 class="content-title mb-0 my-auto">GasREV</h4><span class="text-muted active mt-1 tx-13 ml-2 mb-0">/ Products / Add new payment </span>
+			<header class="breadcrumb-header justify-content-between">
+				<div class="my-auto">
+					<div class="d-flex">
+						<h4 class="content-title mb-0 my-auto tx-14">Others</h4><span
+							class="tx-primary tx-xs-semibold active mt-1 tx-14 ml-2 mb-0">/Send New Notifiaction </span>
+					</div>
+				</div>
+			</header>
+			<!-- breadcrumb -->
+
+				<!-- row opened -->
+				<div class="row row-sm">
+					<div class="col-xl-12">
+						<div class="card bd-0 p-5">
+
+							<div class="card-header pb-0">
+								<div class="d-flex justify-content-between mb-4 align-items-center">
+									<h4 class="text-capitalize tx-xs-semibold tx-24 tx-custom-grey">Send New Mass Notification</h4>
+								</div>
+							
+							</div>
+
+							<!-- card Begin -->
+							<div class="card-body mb-5 ">
+								<form action="#">
+									<div class="form-row row-xs mb-4">
+										<div class="col-md-6 pr-3">
+											<label for="user-class"   class="tx-14">User Class</label>
+											<select name="user-class" id="user-class" class="form-control">
+												<option value="">All Agents</option>
+												<option value="">Banned Agents</option>
+												<option value="">Active </option>
+												<option value="">All user </option>
+												<option value="">Active user </option>
+											</select>
+										</div>
+										<div class="col-md-6 pr-3">
+											<label for="price"   class="tx-14">Subject</label>
+											<input class="form-control" placeholder="" type="text">
+											<small class="tx-13 tx-custom-grey pt-2 d-inline-block">Notification link used when user clicks on the notification</small>
+										</div>
+										
+									</div>
+									<div class="mb-4">
+										<label for="message">Message</label>
+										<textarea name="message" id="" cols="100" rows="10" class="w-100 form-control"></textarea>
+									</div>
+									
+
+									<button class="btn btn-primary btn-lg rounded tx-16">Send</button>
+								</form>
+								
+			
+								
+							</div>
+							<!-- card end -->
+						</div>
+
+						
+					</div>
+					<!--/div-->
+
+	
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- Container closed -->
+		</div>
+		<!-- main-content closed -->
+
+
+		<div class="modal" id="approvedModal">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content tx-size-sm">
+					<div class="modal-body tx-center pd-y-20 pd-x-20">
+						<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+						<h4 class="mg-b-20">Are you sure you want <br> to ban this user?</h4>
+						<div class="d-flex align-items-center justify-content-between mt-3">
+							<button aria-label="Close" class="btn rounded-0 btn-primary pd-x-25" data-dismiss="modal" type="button">Mark As Delivered</button>	
 						</div>
 					</div>
-					
 				</div>
-				<!-- breadcrumb -->
-				
-				
 			</div>
 		</div>
-		<!-- Container closed -->
-
+		<div class="modal" id="cancelModal">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content tx-size-sm">
+					<div class="modal-body tx-center pd-y-20 pd-x-20">
+						<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+						<h4 class="mg-b-20 tx-26">Are you sure you want <br> to delete this user?</h4>
+						<div class="d-flex align-items-center justify-content-between">
+							<button aria-label="Close" class="btn rounded-0 btn-primary pd-x-25" data-dismiss="modal" type="button">Continue</button>
+							<button aria-label="Close" class="rounded-0 btn-outline-primary pd-x-25 tx-primary" data-dismiss="modal" type="button">Cancel</button>
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 
 		<!-- Footer opened -->
 		<div class="main-footer ht-40">
-			<div class="container-fluid pd-t-0-f ht-100p">
-				<span>Copyright © 2020 <a href="#">Valex</a>. Designed by <a href="https://www.spruko.com/">Spruko</a> All rights reserved.</span>
-			</div>
+			
 		</div>
 		<!-- Footer closed -->
 
+		<!-- Back-to-top -->
+		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+
 		<!-- JQuery min js -->
-		<script src="../assets/plugins/jquery/jquery.min.js"></script>
+		<script src="/assets/plugins/jquery/jquery.min.js"></script>
 
 		<!-- Bootstrap Bundle js -->
-		<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 		<!-- Ionicons js -->
-		<script src="../assets/plugins/ionicons/ionicons.js"></script>
+		<script src="/assets/plugins/ionicons/ionicons.js"></script>
 
 		<!-- Moment js -->
-		<script src="../assets/plugins/moment/moment.js"></script>
-
-		<!--Internal Sparkline js -->
-		<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-
-		<!-- Moment js -->
-		<script src="../assets/plugins/raphael/raphael.min.js"></script>
-
-		<!-- Internal Piety js -->
-		<script src="../assets/plugins/peity/jquery.peity.min.js"></script>
-
-		<!--Internal  Flot js-->
-		<script src="../assets/plugins/jquery.flot/jquery.flot.js"></script>
-		<script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
-		<script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
-		<script src="../assets/plugins/jquery.flot/jquery.flot.categories.js"></script>
-		<script src="../assets/js/dashboard.sampledata.js"></script>
-		<script src="../assets/js/chart.flot.sampledata.js"></script>
-
-		<!-- Sticky js -->
-		<script src="../assets/js/sticky.js"></script>
-
-		<!-- Rating js-->
-		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
-		<script src="../assets/plugins/rating/jquery.barrating.js"></script>
+		<script src="/assets/plugins/moment/moment.js"></script>
 
 		<!-- P-scroll js -->
-		<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-		<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+		<script src="/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script src="/assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+		<!-- Internal Data tables -->
+		<script src="/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+		<script src="/assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+		<script src="/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+		<script src="/assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+		<script src="/assets/plugins/datatable/js/jquery.dataTables.js"></script>
+		<script src="/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+		<script src="/assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+		<script src="/assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+		<script src="/assets/plugins/datatable/js/jszip.min.js"></script>
+		<script src="/assets/plugins/datatable/js/pdfmake.min.js"></script>
+		<script src="/assets/plugins/datatable/js/vfs_fonts.js"></script>
+		<script src="/assets/plugins/datatable/js/buttons.html5.min.js"></script>
+		<script src="/assets/plugins/datatable/js/buttons.print.min.js"></script>
+		<script src="/assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+		<script src="/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+		<script src="/assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+		<!--Internal  Datatable js -->
+		<script src="/assets/js/table-data.js"></script>
+
+		<!-- Rating js-->
+		<script src="/assets/plugins/rating/jquery.rating-stars.js"></script>
+		<script src="/assets/plugins/rating/jquery.barrating.js"></script>
+
+		<!-- Custom Scroll bar Js-->
+		<script src="/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 		<!-- Horizontalmenu js-->
-		<script src="../assets/plugins/sidebar/sidebar.js"></script>
-		<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
+		<script src="/assets/plugins/horizontal-menu/horizontal-menu-2/horizontal-menu.js"></script>
 
-		<!-- Eva-icons js -->
-		<script src="../assets/js/eva-icons.min.js"></script>
+		<!-- Right-sidebar js -->
+		<script src="/assets/plugins/sidebar/sidebar.js"></script>
+		<script src="/assets/plugins/sidebar/sidebar-custom.js"></script>
 
-		<!--Internal Apexchart js-->
-		<script src="../assets/js/apexcharts.js"></script>
+		<!-- Sticky js -->
+		<script src="/assets/js/sticky.js"></script>
 
-		<!-- Horizontalmenu js-->
-		<script src="../assets/plugins/horizontal-menu/horizontal-menu-2/horizontal-menu.js"></script>
-
-		<!-- Internal Map -->
-		<script src="../assets/plugins/jqvmap/jquery.vmap.min.js"></script>
-		<script src="../assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-
-		<!-- Internal Chart js -->
-		<script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
-
-		<!--Internal  index js -->
-		<script src="../assets/js/index.js"></script>
-		<script src="../assets/js/jquery.vmap.sampledata.js"></script>
+		<!-- eva-icons js -->
+		<script src="/assets/js/eva-icons.min.js"></script>
 
 		<!-- custom js -->
-		<script src="../assets/js/custom.js"></script>
-		<script src="../assets/js/jquery.vmap.sampledata.js"></script>
+		<script src="/assets/js/custom.js"></script>
+
 
 	</body>
+
+
 </html>
